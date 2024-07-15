@@ -44,7 +44,7 @@ def save_processed_data():
         "script": script_text.get('1.0', tk.END).strip(),
         "scenes": [scenes_list.get(i) for i in range(scenes_list.size())]
     }
-    with open('Processed_Script/Script_Scene.json', 'w') as file:
+    with open('Script_Processor/Script_Scene.json', 'w') as file:
         json.dump(processed_data, file)
 
 # Setting up the Tkinter window
